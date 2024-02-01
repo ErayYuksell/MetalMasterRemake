@@ -7,15 +7,20 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public MovementModule movementModule;
+    public FireModule fireModule;
+
     void Start()
     {
         movementModule.Init(this);
+        fireModule.Init(this);
+        StartCoroutine(fireModule.FireSystem());
     }
 
 
     void Update()
     {
         movementModule.PlayerMovement();
+
     }
 
 
@@ -58,4 +63,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    [Serializable]
+    public class FireModule
+    {
+        PlayerController playerController;
+        [SerializeField] ObjectPool ObjectPool;
+        public Transform firePoint;
+        public void Init(PlayerController playerController)
+        {
+            this.playerController = playerController;
+        }
+        public IEnumerator FireSystem()
+        {
+            while (true)
+            {
+                var obj = ObjectPool.GetObjectPool();
+                obj.transform.position = firePoint.position;
+
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+    }
 }

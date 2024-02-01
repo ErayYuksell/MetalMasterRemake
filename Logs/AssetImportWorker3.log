@@ -1599,3 +1599,56 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1705.903634 seconds.
+  path: Assets/Bullet/textures/Bala abajo_AO.jpg
+  artifactKey: Guid(b7d8aec4a7caee148b5a487fee5e814b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet/textures/Bala abajo_AO.jpg using Guid(b7d8aec4a7caee148b5a487fee5e814b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc333801e0afb9fbf670388f718c408c') in 0.068920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Floor/textures/FloorHero_TILE_1024_N.tga.png
+  artifactKey: Guid(dc917ec8595199543aab78ff6c79587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Floor/textures/FloorHero_TILE_1024_N.tga.png using Guid(dc917ec8595199543aab78ff6c79587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afdecc717afb537eb08b7c0674f7ad9c') in 0.032268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Bullet/textures/Bala arriba_roughness.jpg
+  artifactKey: Guid(c009e245875bffe4c9de180bd67b51b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet/textures/Bala arriba_roughness.jpg using Guid(c009e245875bffe4c9de180bd67b51b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa20a3d5ee52a6c8c359623bb3de690a') in 0.022485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Bullet/textures/Bala arriba_AO.jpg
+  artifactKey: Guid(970cc53e8517b9440a17cea18df55d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet/textures/Bala arriba_AO.jpg using Guid(970cc53e8517b9440a17cea18df55d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6380ecd42a5cbe95c938b21e6ae74b') in 0.020745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Bullet/textures/Bala abajo_emissive.jpg
+  artifactKey: Guid(abacf183b7855264e913fec18ffd7c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet/textures/Bala abajo_emissive.jpg using Guid(abacf183b7855264e913fec18ffd7c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8982e5346245a076d286ab725ca413c8') in 0.018350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Bullet/textures/Bala arriba_metallic.jpg
+  artifactKey: Guid(90380d45b29897c4fb643c2c92c1b6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bullet/textures/Bala arriba_metallic.jpg using Guid(90380d45b29897c4fb643c2c92c1b6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505f2969c9c6c7a1a59c4f91350fc53e') in 0.019957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
