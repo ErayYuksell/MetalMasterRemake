@@ -144,9 +144,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6301632871605090207}
   - component: {fileID: 1254481855425548998}
+  - component: {fileID: 3723995477696067426}
+  - component: {fileID: 8787446586746199578}
   m_Layer: 0
   m_Name: GateController
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,6 +187,55 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ecb16d7cb9967d44b9d26dea348b0bda, type: 2}
   - {fileID: 2100000, guid: b62eb9aeaa2eea844bfbfe425c4bbed3, type: 2}
   gateText: {fileID: 6378318377453420966}
+  gateHitAnim: {fileID: 7400000, guid: a7d0f198c5f729f40ac288bee2987d5d, type: 2}
+--- !u!65 &3723995477696067426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013185001797487276}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 2, z: 0.2}
+  m_Center: {x: -2, y: 1, z: 0}
+--- !u!54 &8787446586746199578
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013185001797487276}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1185599094395884482
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +263,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185599094395884482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -463,7 +514,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4763814922092536136}
   - component: {fileID: 8360960908303406604}
-  - component: {fileID: 2393188005341239298}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -509,27 +559,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &2393188005341239298
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7369908956133289019}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4, y: 2, z: 0.2}
-  m_Center: {x: -2, y: 1, z: 0}
 --- !u!1 &7601719608158231391
 GameObject:
   m_ObjectHideFlags: 0

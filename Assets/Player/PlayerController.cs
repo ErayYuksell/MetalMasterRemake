@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
 {
     public MovementModule movementModule;
     public FireModule fireModule;
+    public GateModule gateModule;
 
     void Start()
     {
         movementModule.Init(this);
         fireModule.Init(this);
+        gateModule.Init(this);
         StartCoroutine(fireModule.FireSystem());
     }
 
@@ -69,6 +71,9 @@ public class PlayerController : MonoBehaviour
         PlayerController playerController;
         [SerializeField] ObjectPool ObjectPool;
         public Transform firePoint;
+        public float rate = 0.1f;
+        public float power = 1;
+        public float range = 15;
         public void Init(PlayerController playerController)
         {
             this.playerController = playerController;
@@ -80,8 +85,38 @@ public class PlayerController : MonoBehaviour
                 var obj = ObjectPool.GetObjectPool();
                 obj.transform.position = firePoint.position;
 
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(rate);
             }
         }
+    }
+
+    [Serializable]
+    public class GateModule
+    {
+        PlayerController playerController;
+        [SerializeField] float powerMultiply = 0.001f;
+        [SerializeField] float rangeMultiply = 0.001f;
+        [SerializeField] float rateMultiply = 0.001f;
+        public void Init(PlayerController playerController)
+        {
+            this.playerController = playerController;
+        }
+
+        public void GateController(GateType gateType, int gateValue)
+        {
+            switch (gateType)
+            {
+                case GateType.Power:
+                    playerController.fireModule.power += gateValue * powerMultiply;
+                    break;
+                case GateType.Range:
+                    playerController.fireModule.range += gateValue * rangeMultiply;
+                    break;
+                case GateType.Rate:
+                    playerController.fireModule.rate += gateValue * rateMultiply;
+                    break;
+            }
+        }
+
     }
 }

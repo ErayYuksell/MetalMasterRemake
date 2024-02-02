@@ -27,10 +27,21 @@ public class BulletControl : MonoBehaviour
     }
     public void BulletDistance()
     {
-        float distance = Vector3.Distance(firePoint.transform.position,transform.position);
-
-        if (distance > 15)
+        float distance = Vector3.Distance(firePoint.transform.position, transform.position);
+        float range = playerControllerScript.fireModule.range;
+        if (distance > range)
         {
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Gate"))
+        {
+            var gate = other.GetComponent<GateController>();
+            gate.StartAnim();
+            gate.IncreaseGateValue((int)playerControllerScript.fireModule.power);
             gameObject.SetActive(false);
         }
     }
