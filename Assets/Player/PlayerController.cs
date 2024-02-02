@@ -3,18 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using DG.Tweening;
+using System.Xml.Xsl;
+
 
 public class PlayerController : MonoBehaviour
 {
     public MovementModule movementModule;
     public FireModule fireModule;
     public GateModule gateModule;
+    public PlayerDamageModule playerDamageModule;
 
     void Start()
     {
         movementModule.Init(this);
         fireModule.Init(this);
         gateModule.Init(this);
+        playerDamageModule.Init(this);
         StartCoroutine(fireModule.FireSystem());
     }
 
@@ -24,7 +29,11 @@ public class PlayerController : MonoBehaviour
         movementModule.PlayerMovement();
 
     }
-
+    public void StartCort()
+    {
+        fireModule.canFire = true;
+        StartCoroutine(fireModule.FireSystem());
+    }
 
     [Serializable]
     public class MovementModule
@@ -34,7 +43,7 @@ public class PlayerController : MonoBehaviour
         float xSpeed;
         float maxXValue = -.5f;
         float RmaxXValue = -10f;
-        bool canMove = true;
+        public bool canMove = true;
         public void Init(PlayerController playerController)
         {
             this.playerController = playerController;
@@ -74,13 +83,14 @@ public class PlayerController : MonoBehaviour
         public float rate = 0.1f;
         public float power = 1;
         public float range = 15;
+        public bool canFire = true;
         public void Init(PlayerController playerController)
         {
             this.playerController = playerController;
         }
         public IEnumerator FireSystem()
         {
-            while (true)
+            while (canFire)
             {
                 var obj = ObjectPool.GetObjectPool();
                 obj.transform.position = firePoint.position;
@@ -88,6 +98,7 @@ public class PlayerController : MonoBehaviour
                 yield return new WaitForSeconds(rate);
             }
         }
+       
     }
 
     [Serializable]
@@ -118,5 +129,26 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+    }
+
+    [Serializable]
+    public class PlayerDamageModule
+    {
+        PlayerController playerController;
+        public void Init(PlayerController playerController)
+        {
+            this.playerController = playerController;
+        }
+
+        public void ObstacleDamage()
+        {
+            playerController.movementModule.canMove = false;
+            playerController.fireModule.canFire = false;
+            playerController.transform.DOMove(new Vector3(playerController.transform.position.x, playerController.transform.position.y, 4), 1).OnComplete(() =>
+            {
+                playerController.movementModule.canMove = true;
+                playerController.StartCort();
+            });
+        }
     }
 }
