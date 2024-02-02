@@ -135,6 +135,7 @@ public class PlayerController : MonoBehaviour
     public class PlayerDamageModule
     {
         PlayerController playerController;
+        [SerializeField] float backPushingPower = 1;
         public void Init(PlayerController playerController)
         {
             this.playerController = playerController;
@@ -144,7 +145,7 @@ public class PlayerController : MonoBehaviour
         {
             playerController.movementModule.canMove = false;
             playerController.fireModule.canFire = false;
-            playerController.transform.DOMove(new Vector3(playerController.transform.position.x, playerController.transform.position.y, 4), 1).OnComplete(() =>
+            playerController.transform.DOMove(new Vector3(playerController.transform.position.x, playerController.transform.position.y, backPushingPower ), 1).OnComplete(() =>
             {
                 playerController.movementModule.canMove = true;
                 playerController.StartCort();

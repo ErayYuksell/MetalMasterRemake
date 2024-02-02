@@ -10,6 +10,7 @@ public class ObstacleController : MonoBehaviour
         {
             var playerController = other.GetComponent<PlayerController>();
             playerController.playerDamageModule.ObstacleDamage();
+            gameObject.SetActive(false);
         }
     }
 }

@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 5640064499589027200}
   m_Layer: 0
   m_Name: PlayerController
-  m_TagString: Untagged
+  m_TagString: PlayerController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,8 +169,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3, y: 1, z: 2}
-  m_Center: {x: 0.3, y: 0.6, z: -0.5}
+  m_Size: {x: 0.5915878, y: 1, z: 2}
+  m_Center: {x: 0.26919866, y: 0.6, z: -0.5}
 --- !u!54 &5569349720755327877
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -212,13 +212,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementModule:
     playerSpeed: 5
+    canMove: 1
   fireModule:
     ObjectPool: {fileID: 0}
     firePoint: {fileID: 8819377486990956324}
     rate: 0.1
     power: 1
     range: 15
+    canFire: 1
   gateModule:
     powerMultiply: 0.001
     rangeMultiply: 0.001
     rateMultiply: 0.001
+  playerDamageModule:
+    backPushingPower: 12

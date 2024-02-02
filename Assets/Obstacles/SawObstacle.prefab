@@ -9,9 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6344989335732869258}
-  - component: {fileID: 1453328170487416048}
-  - component: {fileID: 3029096432478882590}
-  - component: {fileID: 1934399407763618225}
   m_Layer: 0
   m_Name: SawObstacle
   m_TagString: Untagged
@@ -36,66 +33,6 @@ Transform:
   - {fileID: 9065501969353811698}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
---- !u!65 &1453328170487416048
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674925011522360310}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.2360818, y: 0.8917094, z: 3.521533}
-  m_Center: {x: -1.7830372, y: 1.0541453, z: 14.442394}
---- !u!54 &3029096432478882590
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674925011522360310}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &1934399407763618225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674925011522360310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7e6a096bc18ed4f8a69aa39f45698d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4115775270404593261
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +129,8 @@ GameObject:
   - component: {fileID: 8618558698871118958}
   - component: {fileID: 2629398432254601092}
   - component: {fileID: 5340168001298841601}
+  - component: {fileID: 7629498327037788500}
+  - component: {fileID: 6158035407693669018}
   m_Layer: 0
   m_Name: gear-base.001
   m_TagString: Untagged
@@ -266,6 +205,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7629498327037788500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4777060308837935897}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0037885578, y: 0.014680149, z: 0.014814701}
+  m_Center: {x: 0.00009955855, y: 0.00047719115, z: -0.00028971673}
+--- !u!114 &6158035407693669018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4777060308837935897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7e6a096bc18ed4f8a69aa39f45698d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6960659013144559416
 GameObject:
   m_ObjectHideFlags: 0
