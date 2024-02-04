@@ -366,6 +366,7 @@
 "Assets/ObjectPool.cs"
 "Assets/Obstacles/ObstacleController.cs"
 "Assets/Player/PlayerController.cs"
+"Assets/ShatteredObjects/ShatterControl.cs"
 -langversion:9.0
 
 /deterministic

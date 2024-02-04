@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerController
   - Gate
+  - LazerBullet
   layers:
   - Default
   - TransparentFX
@@ -13,10 +14,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - ShatterPart
+  - Floor
+  - LazerBullet
   - 
   - 
   - 
