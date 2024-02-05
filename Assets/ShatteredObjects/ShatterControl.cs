@@ -14,6 +14,7 @@ public class ShatterControl : MonoBehaviour
     [SerializeField] TextMeshProUGUI wallText;
     [SerializeField] int destroyValue;
     int destroyCount = 0;
+    [SerializeField] Transform test;
     private void Start()
     {
         wallText.text = destroyValue.ToString();
@@ -27,7 +28,6 @@ public class ShatterControl : MonoBehaviour
     {
         //Vector3 pos = Random.insideUnitCircle * 5f; // 0 ve 1 arasinda rastgele sayi donduruyor onu 5 le carpip posisyona ekliyorum 
         Vector3 pos = new Vector3(Random.Range(-3, 3), Random.Range(0, 3), Random.Range(-2, 2));
-        //Debug.Log(transform.position);
         newPos = transform.position + pos;
         return newPos;
 
@@ -36,24 +36,25 @@ public class ShatterControl : MonoBehaviour
     void MoveShatterPart()
     {
         var obj = shatterObjects[RandomListNumber()];
-        //obj.transform.DOMoveZ(-1f, 0.5f).OnComplete(() =>
-        //{
-        //obj.transform.DOMoveY(2, 0.5f).OnComplete(() =>
-        //{
-        obj.transform.DOMove(RandomPos(), 0.2f).OnComplete(() =>
+        shatterObjects.Remove(obj);
+       
+        obj.transform.DOMove(RandomPos(), 0.5f).OnComplete(() =>
         {
             //obj.GetComponent<Rigidbody>().useGravity = true;
-            DestroyWall();
+            //DestroyWall();
+            obj.transform.DOMove(new Vector3(transform.position.x - 5, 0, transform.position.z), 2).OnComplete(() =>
+            {
+                //obj.GetComponent<MeshCollider>().enabled = false;
+                //obj.GetComponent<Rigidbody>().useGravity = false;
+                //obj.GetComponent<Rigidbody>().velocity = new Vector3(obj.transform.position.x, obj.transform.position.y, 3); // conveyor ustune oturduklarinda parcalarin birbiriyle carpismayi birakmasi lazim
+            });
         });
-        //});
-        //});
-
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("LazerBullet"))
         {
-            //DestroyWall();
+            DestroyWall();
             var lazerBullet = other.GetComponent<BulletControl>();
             lazerBullet.gameObject.SetActive(false);
             MoveShatterPart();
@@ -66,7 +67,12 @@ public class ShatterControl : MonoBehaviour
         DecreaseTextValue();
         if (destroyCount >= destroyValue)
         {
-            gameObject.SetActive(false);
+            foreach (var item in shatterObjects)
+            {
+                item.SetActive(false);
+            }
+            wallText.enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
     void DecreaseTextValue()

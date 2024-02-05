@@ -2761,7 +2761,7 @@ GameObject:
   - component: {fileID: 1733027799016895737}
   m_Layer: 7
   m_Name: ShatterWall
-  m_TagString: Untagged
+  m_TagString: ShatterPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2839,7 +2839,8 @@ MonoBehaviour:
   - {fileID: 8911513749201871701}
   - {fileID: 3595915695971401364}
   wallText: {fileID: 8996512256917568586}
-  destroyValue: 0
+  destroyValue: 2
+  test: {fileID: 0}
 --- !u!1 &8911513749201871701
 GameObject:
   m_ObjectHideFlags: 0

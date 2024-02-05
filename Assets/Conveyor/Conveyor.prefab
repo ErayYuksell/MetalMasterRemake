@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2704760586174023822}
   - component: {fileID: 8478330275148262859}
   - component: {fileID: 9126774091711431373}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_RollerHolder_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,9 +95,11 @@ GameObject:
   - component: {fileID: 8677958726273959904}
   - component: {fileID: 1856996279951487433}
   - component: {fileID: 7876340261683905959}
-  m_Layer: 0
+  - component: {fileID: 8403910310578164994}
+  - component: {fileID: 806751878754311248}
+  m_Layer: 11
   m_Name: Conveyor_Belt
-  m_TagString: Untagged
+  m_TagString: ConveyorBelt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,6 +190,40 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!64 &8403910310578164994
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430206997885019037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -291853851513015083, guid: 849699baf8ff5424089fcc3e29a68867, type: 3}
+--- !u!114 &806751878754311248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430206997885019037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9a84465e75f4f43a4d24bc9fbf3a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &494841037086419527
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +235,7 @@ GameObject:
   - component: {fileID: 1292184013259745728}
   - component: {fileID: 8132289521990725173}
   - component: {fileID: 3422268907010321526}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,9 +316,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5519560842348482994}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor
-  m_TagString: Untagged
+  m_TagString: Conveyor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,7 +350,7 @@ GameObject:
   - component: {fileID: 4183085427740653596}
   - component: {fileID: 2855108216761107126}
   - component: {fileID: 2266762362104429425}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_End_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +433,7 @@ GameObject:
   - component: {fileID: 6506529091755970607}
   - component: {fileID: 749323445374642454}
   - component: {fileID: 1373519211435958100}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -480,7 +516,7 @@ GameObject:
   - component: {fileID: 7689554891754497517}
   - component: {fileID: 3132516208306872070}
   - component: {fileID: 6190649555589977637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +599,7 @@ GameObject:
   - component: {fileID: 1770925317861333323}
   - component: {fileID: 2728280007455756285}
   - component: {fileID: 3467063994142027676}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -646,7 +682,7 @@ GameObject:
   - component: {fileID: 890410748837614368}
   - component: {fileID: 8843533129426979855}
   - component: {fileID: 7248534871240546670}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Drum_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +765,7 @@ GameObject:
   - component: {fileID: 7951651450035367813}
   - component: {fileID: 6575445158224588870}
   - component: {fileID: 2411439567056833518}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +848,7 @@ GameObject:
   - component: {fileID: 2376055806521899895}
   - component: {fileID: 1262523292230935815}
   - component: {fileID: 2961036823722461019}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Funnel_Back_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -895,7 +931,7 @@ GameObject:
   - component: {fileID: 6212736043234287682}
   - component: {fileID: 7916899644502613557}
   - component: {fileID: 7981548022079416009}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,7 +1014,7 @@ GameObject:
   - component: {fileID: 6620649552320873044}
   - component: {fileID: 93696963347692110}
   - component: {fileID: 1856109906875758254}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1061,7 +1097,7 @@ GameObject:
   - component: {fileID: 7208377891365851244}
   - component: {fileID: 5032850079526770892}
   - component: {fileID: 4843196707604017860}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1180,7 @@ GameObject:
   - component: {fileID: 7235127167379944270}
   - component: {fileID: 1552003396470344403}
   - component: {fileID: 7399583338744166796}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1263,7 @@ GameObject:
   - component: {fileID: 1180871425506759722}
   - component: {fileID: 1896786296358296121}
   - component: {fileID: 5424848962663022116}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1310,7 +1346,7 @@ GameObject:
   - component: {fileID: 4069952540643717665}
   - component: {fileID: 348873309131301661}
   - component: {fileID: 9077235793719976248}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1429,7 @@ GameObject:
   - component: {fileID: 954055337666754889}
   - component: {fileID: 3706119569767420647}
   - component: {fileID: 370946149865936658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_End_Cap_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1512,7 @@ GameObject:
   - component: {fileID: 6266697846029535128}
   - component: {fileID: 7955443720057130919}
   - component: {fileID: 883417365205280382}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,7 +1595,7 @@ GameObject:
   - component: {fileID: 9191753580574496216}
   - component: {fileID: 6006715570066627542}
   - component: {fileID: 7959298391877958708}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Drum_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1642,7 +1678,7 @@ GameObject:
   - component: {fileID: 7920127171330141123}
   - component: {fileID: 5634694195449385355}
   - component: {fileID: 8354553784262097065}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1761,7 @@ GameObject:
   - component: {fileID: 5123565367944853225}
   - component: {fileID: 956938538062120176}
   - component: {fileID: 5973608895110127336}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Funnel_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1808,7 +1844,7 @@ GameObject:
   - component: {fileID: 2557543298646377409}
   - component: {fileID: 4244604785335741762}
   - component: {fileID: 7759716406283271113}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1891,7 +1927,7 @@ GameObject:
   - component: {fileID: 660071980577065996}
   - component: {fileID: 741922830131870001}
   - component: {fileID: 6157694587269868628}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_RollerHolder_low4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1974,7 +2010,7 @@ GameObject:
   - component: {fileID: 7504983879950634552}
   - component: {fileID: 1220545943603681569}
   - component: {fileID: 8684422998301874642}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2057,7 +2093,7 @@ GameObject:
   - component: {fileID: 5730012037094414864}
   - component: {fileID: 6465921109748565905}
   - component: {fileID: 3142879394524411473}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2140,7 +2176,7 @@ GameObject:
   - component: {fileID: 8028528407595884059}
   - component: {fileID: 5582182199624546102}
   - component: {fileID: 4611049736475049708}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2223,7 +2259,7 @@ GameObject:
   - component: {fileID: 3958412092382022872}
   - component: {fileID: 5912881464425295152}
   - component: {fileID: 8680706563235725115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2306,7 +2342,7 @@ GameObject:
   - component: {fileID: 4861048933268580898}
   - component: {fileID: 1859857168760980881}
   - component: {fileID: 6358630923562682109}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2389,7 +2425,7 @@ GameObject:
   - component: {fileID: 1433614218738117422}
   - component: {fileID: 6995264963466353919}
   - component: {fileID: 4845470924399697328}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2472,7 +2508,7 @@ GameObject:
   - component: {fileID: 5333090639751775029}
   - component: {fileID: 4618231056830832361}
   - component: {fileID: 6685031677762172002}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2555,7 +2591,7 @@ GameObject:
   - component: {fileID: 1852097077597126912}
   - component: {fileID: 8480684756923993720}
   - component: {fileID: 1328567087116515509}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2638,7 +2674,7 @@ GameObject:
   - component: {fileID: 604709865727395328}
   - component: {fileID: 351225990091793985}
   - component: {fileID: 9071357716316949885}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2721,7 +2757,7 @@ GameObject:
   - component: {fileID: 8342070649452264896}
   - component: {fileID: 6574046042617465776}
   - component: {fileID: 6286596664928248577}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Funnel_Side_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2804,7 +2840,7 @@ GameObject:
   - component: {fileID: 7978255605532553207}
   - component: {fileID: 8686497086314176866}
   - component: {fileID: 1838606898277296427}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2887,7 +2923,7 @@ GameObject:
   - component: {fileID: 9144144521362182715}
   - component: {fileID: 2015423148929164445}
   - component: {fileID: 5340709598392836391}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2970,7 +3006,7 @@ GameObject:
   - component: {fileID: 4830282251214953814}
   - component: {fileID: 6276213780841544552}
   - component: {fileID: 5374816007468051079}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3053,7 +3089,7 @@ GameObject:
   - component: {fileID: 8673679354359221234}
   - component: {fileID: 4777316944131778578}
   - component: {fileID: 754692122463328730}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_RollerHolder_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3136,7 +3172,7 @@ GameObject:
   - component: {fileID: 3053877201087600562}
   - component: {fileID: 5653126825756334383}
   - component: {fileID: 6475757893200928752}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3219,7 +3255,7 @@ GameObject:
   - component: {fileID: 1068335690636420713}
   - component: {fileID: 496817660041697411}
   - component: {fileID: 380124763911234970}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3302,7 +3338,7 @@ GameObject:
   - component: {fileID: 5221564721501672421}
   - component: {fileID: 5453832067209341690}
   - component: {fileID: 7774669213215216727}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3385,7 +3421,7 @@ GameObject:
   - component: {fileID: 8801246654534843170}
   - component: {fileID: 50270594373795217}
   - component: {fileID: 56766121840982700}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3468,7 +3504,7 @@ GameObject:
   - component: {fileID: 1408494177557639395}
   - component: {fileID: 2353555768696266787}
   - component: {fileID: 5529898939931968725}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3551,7 +3587,7 @@ GameObject:
   - component: {fileID: 5533885623956168529}
   - component: {fileID: 235420270580715410}
   - component: {fileID: 1079752709505268999}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3632,7 +3668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1531752292724045891}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: MadeUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3722,7 +3758,7 @@ GameObject:
   - component: {fileID: 209711485908941004}
   - component: {fileID: 8799116706142413719}
   - component: {fileID: 912738527859840539}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3805,7 +3841,7 @@ GameObject:
   - component: {fileID: 3580504786938670438}
   - component: {fileID: 2793695598771951859}
   - component: {fileID: 6506547697935391514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3888,7 +3924,7 @@ GameObject:
   - component: {fileID: 8417016834462665092}
   - component: {fileID: 1865592613271940126}
   - component: {fileID: 9181296908419407844}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3971,7 +4007,7 @@ GameObject:
   - component: {fileID: 5272491253071932578}
   - component: {fileID: 5366324726475724169}
   - component: {fileID: 788778426291478988}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4054,7 +4090,7 @@ GameObject:
   - component: {fileID: 7209382873361186110}
   - component: {fileID: 91967051597339580}
   - component: {fileID: 5984684646251481640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4137,7 +4173,7 @@ GameObject:
   - component: {fileID: 8822473023394426848}
   - component: {fileID: 9142859346744089653}
   - component: {fileID: 982164548691491855}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4220,7 +4256,7 @@ GameObject:
   - component: {fileID: 7415691167991044524}
   - component: {fileID: 2417248609179086482}
   - component: {fileID: 2536093350737487940}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4303,7 +4339,7 @@ GameObject:
   - component: {fileID: 7111652336767547032}
   - component: {fileID: 7527504925291319184}
   - component: {fileID: 3706646396997593154}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4386,7 +4422,7 @@ GameObject:
   - component: {fileID: 5013984605367598502}
   - component: {fileID: 4260674792607779406}
   - component: {fileID: 3684128712522479364}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Leg_low11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4469,7 +4505,7 @@ GameObject:
   - component: {fileID: 2874947631133816797}
   - component: {fileID: 8769766106915449709}
   - component: {fileID: 6085891096130700025}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4552,7 +4588,7 @@ GameObject:
   - component: {fileID: 5588835639043874355}
   - component: {fileID: 4559957707729691499}
   - component: {fileID: 1257942171812626150}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Support_low11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4635,7 +4671,7 @@ GameObject:
   - component: {fileID: 364368458350510487}
   - component: {fileID: 1175353176581535839}
   - component: {fileID: 7585490617648950592}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_Side_low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4718,7 +4754,7 @@ GameObject:
   - component: {fileID: 2541469411097034773}
   - component: {fileID: 6892111603369649421}
   - component: {fileID: 3790690245843859295}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_LegClip_low8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4801,7 +4837,7 @@ GameObject:
   - component: {fileID: 7060967935376788149}
   - component: {fileID: 7006901904609048623}
   - component: {fileID: 8434464975909865987}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Conveyor_RollerHolder_low3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
