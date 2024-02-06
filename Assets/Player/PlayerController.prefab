@@ -211,12 +211,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementModule:
-    playerSpeed: 5
+    playerSpeed: 4
     canMove: 1
   fireModule:
     ObjectPool: {fileID: 0}
     firePoint: {fileID: 8819377486990956324}
-    rate: 0.1
+    rate: 1
     power: 1
     range: 15
     canFire: 1
@@ -225,4 +225,4 @@ MonoBehaviour:
     rangeMultiply: 0.001
     rateMultiply: 0.001
   playerDamageModule:
-    backPushingPower: 12
+    backPushingPower: 6

@@ -1,13 +1,13 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-1463923039950419058
+--- !u!1102 &-2800992272701419355
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: gear-base_001|gear-base_001Action_001
+  m_Name: SawMove
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -2877922540667140134, guid: 0f6fad2930f603e43b1f44b16a137a07, type: 3}
+  m_Motion: {fileID: 7400000, guid: 88fb2ffcf7437b64c96d08cf20a7d27e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -36,8 +36,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -1463923039950419058}
-    m_Position: {x: 319.11737, y: 120.194534, z: 0}
+    m_State: {fileID: -2800992272701419355}
+    m_Position: {x: 340, y: 110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -47,7 +47,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -1463923039950419058}
+  m_DefaultState: {fileID: -2800992272701419355}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
                 yield return new WaitForSeconds(rate);
             }
         }
-       
+
     }
 
     [Serializable]
@@ -145,8 +145,9 @@ public class PlayerController : MonoBehaviour
         {
             playerController.movementModule.canMove = false;
             playerController.fireModule.canFire = false;
-            playerController.transform.DOMove(new Vector3(playerController.transform.position.x, playerController.transform.position.y, backPushingPower ), 1).OnComplete(() =>
+            playerController.transform.DOMove(new Vector3(playerController.transform.position.x, playerController.transform.position.y, playerController.transform.position.z - backPushingPower), 0.5f).OnComplete(() =>
             {
+                playerController.fireModule.rate += 0.1f; // atis hizini biraz yavaslatiyoruz
                 playerController.movementModule.canMove = true;
                 playerController.StartCort();
             });

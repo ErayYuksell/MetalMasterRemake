@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4523495190118000887}
   - component: {fileID: 1417271136525400465}
   - component: {fileID: -5505002626081791832}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: LazerBullet
   m_TagString: LazerBullet
   m_Icon: {fileID: 0}

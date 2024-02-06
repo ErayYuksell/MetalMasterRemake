@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5045037803915150790}
   - component: {fileID: 5632551035500521217}
   - component: {fileID: 6378318377453420966}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 1254481855425548998}
   - component: {fileID: 3723995477696067426}
   - component: {fileID: 8787446586746199578}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: GateController
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 5938389076706545450}
   - component: {fileID: 2822119208054302132}
   - component: {fileID: 3799110896918360217}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 3243893130787532739}
   - component: {fileID: 5110515653299977175}
   - component: {fileID: 9220323079159814007}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 7660007688630800269}
   - component: {fileID: 1792640062996633653}
   - component: {fileID: 3586572213390017598}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4763814922092536136}
   - component: {fileID: 8360960908303406604}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 4584850854374477233}
   - component: {fileID: 7466038491365270460}
   - component: {fileID: 5147140783681536668}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8306404925120261577}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
