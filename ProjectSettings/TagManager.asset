@@ -10,6 +10,8 @@ TagManager:
   - Conveyor
   - ShatterPart
   - ConveyorBelt
+  - Test
+  - LavCan
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Floor
   - LazerBullet
   - Gate
-  - 
+  - Conveyor
   - 
   - 
   - 
